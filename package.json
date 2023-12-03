@@ -8,7 +8,7 @@
     "bundle": "npm run bundle:client && npm run bundle:api",
     "bundle:client": "vite build",
     "bundle:api": "npm run clean && blocklet bundle --zip --create-release",
-    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle --app-id zNKtDjgfRMuXShK4LatssSYUDhLiGcZFMRtx",
     "upload": "npm run bundle && blocklet upload .blocklet/release/blocklet.json",
     "lint": "eslint src api --ext .mjs,.js,.vue",
     "lint:fix": "npm run lint -- --fix",
